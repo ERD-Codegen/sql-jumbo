@@ -5,7 +5,7 @@ import * as path from "node:path";
 import { faker } from "npm:@faker-js/faker";
 
 const __dirname = import.meta.dirname;
-const outputDir = path.join(__dirname, "output");
+const outputDir = path.join(__dirname, "migrations");
 const files = 100;
 
 async function main() {
