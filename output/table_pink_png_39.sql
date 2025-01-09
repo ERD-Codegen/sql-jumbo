@@ -1,0 +1,1 @@
+CREATE TABLE table_pink_png_39 (group int, category bigint, id bigint, createdAt boolean, status boolean, category float, status smallint, createdAt int, updatedAt date, name blob, comment serial, email set, updatedAt datetime, group time, email mediumint, token enum, title text, name serial, createdAt tinyint, token real, password real, title text, id blob);

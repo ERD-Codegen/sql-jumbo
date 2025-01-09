@@ -1,0 +1,1 @@
+CREATE TABLE table_fuchsia_agp_75 (createdAt date, id blob, phone boolean, createdAt real, id text, category point, title bit, createdAt geometry, name blob, category text, phone date, comment enum, comment enum, updatedAt set, createdAt blob, group binary, group enum);

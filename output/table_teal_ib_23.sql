@@ -1,0 +1,1 @@
+CREATE TABLE table_teal_ib_23 (updatedAt date, email mediumint, email double, phone time, category text, status datetime, comment tinyint, email point, group float, phone set, category blob, updatedAt time, group geometry, comment varchar, status binary, name binary, status bit, id decimal, phone tinyint, title bit, password binary, id int, title bigint, phone bigint);

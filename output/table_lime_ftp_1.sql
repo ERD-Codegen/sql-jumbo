@@ -1,0 +1,1 @@
+CREATE TABLE table_lime_ftp_1 (group decimal, title smallint, updatedAt tinyint, email timestamp, title datetime, token serial, id blob, status double);

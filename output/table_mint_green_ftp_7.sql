@@ -1,0 +1,1 @@
+CREATE TABLE table_mint_green_ftp_7 (createdAt bit, phone text, status float, updatedAt float, phone mediumint, updatedAt enum, title time, comment enum, createdAt point, title decimal, category datetime, id datetime, avatar text, comment varchar, phone set, token decimal, status enum, updatedAt serial, password double);

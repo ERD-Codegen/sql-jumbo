@@ -1,0 +1,1 @@
+CREATE TABLE table_indigo_css_64 (title point, name float, title serial, name varchar, status bit, token date, title decimal, id geometry, phone mediumint, comment mediumint, phone real, comment smallint, name serial, phone enum, updatedAt binary, token geometry, title set, title blob, avatar date, name bit, email text, phone decimal);

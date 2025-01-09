@@ -1,0 +1,1 @@
+CREATE TABLE table_tan_ai_21 (phone smallint, id time, phone geometry);

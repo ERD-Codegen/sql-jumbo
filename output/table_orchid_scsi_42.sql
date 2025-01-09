@@ -1,0 +1,1 @@
+CREATE TABLE table_orchid_scsi_42 (status datetime, id double, avatar float, category real, title timestamp);

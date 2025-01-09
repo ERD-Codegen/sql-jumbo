@@ -1,0 +1,1 @@
+CREATE TABLE table_azure_png_71 (password time, token float, title serial, title binary, group timestamp, password timestamp, email real, category point, token decimal, password timestamp, group int, comment enum, group bigint);

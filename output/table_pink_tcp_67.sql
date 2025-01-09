@@ -1,0 +1,1 @@
+CREATE TABLE table_pink_tcp_67 (id serial, title varchar, token real, title blob, updatedAt timestamp, group date, category binary, avatar smallint);

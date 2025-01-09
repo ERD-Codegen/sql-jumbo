@@ -1,0 +1,1 @@
+CREATE TABLE table_mint_green_dns_12 (token time, updatedAt enum, title real, group point, id timestamp, phone real, name decimal, updatedAt mediumint, phone varchar, comment set, phone geometry, email set, updatedAt date, category enum, comment enum, name mediumint, email binary);

@@ -1,0 +1,1 @@
+CREATE TABLE table_teal_gb_22 (password binary, avatar timestamp, id datetime, email blob);

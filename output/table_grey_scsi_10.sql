@@ -1,0 +1,1 @@
+CREATE TABLE table_grey_scsi_10 (status mediumint, status decimal, status text, group date, title geometry, updatedAt boolean, email datetime, email date, avatar float, password decimal, token mediumint, avatar boolean, avatar timestamp, title text, comment date, email boolean, updatedAt real, group tinyint, category tinyint, category float, phone bigint);

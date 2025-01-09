@@ -1,0 +1,1 @@
+CREATE TABLE table_violet_tls_66 (id blob, status blob, createdAt geometry, title enum, phone varchar, createdAt geometry, comment enum, name serial, category double, name blob);

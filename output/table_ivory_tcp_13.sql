@@ -1,0 +1,1 @@
+CREATE TABLE table_ivory_tcp_13 (group time, title set, email timestamp, phone int, updatedAt text, status varchar, password enum, updatedAt int, createdAt point, group serial, category text, id bigint);

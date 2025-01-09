@@ -1,0 +1,1 @@
+CREATE TABLE table_black_hex_11 (title tinyint, id boolean, comment tinyint, password tinyint, phone bit, group date, createdAt tinyint, name boolean, name time, title bit, password timestamp, updatedAt bit, name date, updatedAt real, updatedAt binary, category timestamp, updatedAt geometry, password set);

@@ -1,0 +1,1 @@
+CREATE TABLE table_maroon_cli_26 (email datetime, name bit, email bigint, group float, email smallint, id geometry, phone bigint, name date, group date, password bit, email int, token mediumint, password time, title text, title int, title mediumint, id blob, name float);

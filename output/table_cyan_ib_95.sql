@@ -1,0 +1,1 @@
+CREATE TABLE table_cyan_ib_95 (password mediumint, title set, comment enum, comment serial, name float, avatar timestamp, phone tinyint, category point, status boolean);

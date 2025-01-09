@@ -1,0 +1,1 @@
+CREATE TABLE table_red_pci_41 (token geometry, updatedAt geometry, comment binary, email decimal, name time, title set, id varchar, email datetime, avatar text, updatedAt date, comment timestamp, group serial, token timestamp, comment serial, status int, createdAt int, email float, id smallint, createdAt double, group int, createdAt double);

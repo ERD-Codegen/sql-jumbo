@@ -1,0 +1,1 @@
+CREATE TABLE table_cyan_ib_3 (avatar serial, category enum, status binary, createdAt bit, title boolean, comment double, phone float, phone double, status datetime, comment decimal, group datetime, id real, title boolean, name decimal, title bigint, title decimal, avatar geometry, name binary, email time, password mediumint, category set, id tinyint, group text, name blob);

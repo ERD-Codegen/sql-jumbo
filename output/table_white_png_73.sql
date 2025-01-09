@@ -1,0 +1,1 @@
+CREATE TABLE table_white_png_73 (password int, phone serial, password time);

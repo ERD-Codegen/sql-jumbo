@@ -1,0 +1,1 @@
+CREATE TABLE table_teal_thx_19 (updatedAt bit, password tinyint, group smallint, comment float);

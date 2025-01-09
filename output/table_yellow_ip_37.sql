@@ -1,0 +1,1 @@
+CREATE TABLE table_yellow_ip_37 (updatedAt binary, name blob, title geometry);

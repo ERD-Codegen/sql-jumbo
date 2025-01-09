@@ -1,0 +1,1 @@
+CREATE TABLE table_fuchsia_sdd_38 (password varchar, password float, id point, phone smallint);

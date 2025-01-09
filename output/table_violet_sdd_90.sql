@@ -1,0 +1,1 @@
+CREATE TABLE table_violet_sdd_90 (phone serial, category boolean, category timestamp, email datetime, createdAt smallint, email bigint, updatedAt text, avatar mediumint, email date);

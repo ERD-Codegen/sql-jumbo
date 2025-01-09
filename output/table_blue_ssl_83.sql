@@ -1,0 +1,1 @@
+CREATE TABLE table_blue_ssl_83 (status boolean, status decimal, avatar double, status tinyint, phone varchar, status blob, comment binary, token int);

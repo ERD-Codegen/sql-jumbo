@@ -1,0 +1,1 @@
+CREATE TABLE table_pink_http_16 (status bit, updatedAt serial, email datetime, createdAt bigint, comment decimal, token varchar, avatar double, token int);

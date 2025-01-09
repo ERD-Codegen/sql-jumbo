@@ -1,0 +1,1 @@
+CREATE TABLE table_black_usb_76 (id timestamp, name varchar, password blob, group varchar, category datetime, category real, createdAt tinyint, group text, phone text, name mediumint, status decimal, avatar tinyint, token boolean);

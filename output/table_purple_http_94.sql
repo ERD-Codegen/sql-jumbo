@@ -1,0 +1,1 @@
+CREATE TABLE table_purple_http_94 (name bit, comment double, category tinyint, email varchar, title bit, title tinyint, token tinyint, group varchar, createdAt time, name datetime, title tinyint, status smallint, phone point);

@@ -1,0 +1,1 @@
+CREATE TABLE table_turquoise_sdd_100 (comment real, token varchar, title datetime, title enum, group time, group real, name boolean, status binary, email real, password timestamp, avatar geometry, createdAt point);
