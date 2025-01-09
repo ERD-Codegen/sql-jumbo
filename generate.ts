@@ -7,11 +7,20 @@ import { faker } from "npm:@faker-js/faker";
 const __dirname = import.meta.dirname;
 const outputDir = path.join(__dirname, "migrations");
 const files = 10;
-const tablesPerFile = 600;
+const tablesPerFile = 300;
+
+type GeneratedTable = Awaited<ReturnType<typeof generateTable>>;
 
 async function main() {
+  const tables: GeneratedTable[] = [];
+
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
+  } else {
+    const files = await fs.promises.readdir(outputDir);
+    for (const file of files) {
+      await fs.promises.unlink(path.join(outputDir, file));
+    }
   }
 
   for (let i = 0; i < files; i++) {
@@ -21,8 +30,9 @@ async function main() {
     );
 
     for (let k = 0; k < tablesPerFile; k++) {
-      const { statement } = await generateTable(`${i}_${k}`);
-      content += statement + "\n";
+      const table = await generateTable(`${i}_${k}`);
+      tables.push(table);
+      content += table.statement + "\n\n";
     }
 
     const filePath = path.join(outputDir, `${fileName}.sql`);
@@ -51,7 +61,9 @@ async function generateTable(postfix: string) {
   return {
     name: tableName,
     columns: columns,
-    statement: `CREATE TABLE ${tableName} (${columns.join(", ")});`,
+    statement: `CREATE TABLE ${tableName} (
+  ${columns.join(",\n  ")}
+);`,
   };
 }
 
