@@ -1,1 +1,0 @@
-CREATE TABLE table_mint_green_hex_54 (id time, password smallint, status set, title varchar, avatar int, title timestamp, email geometry, email time, status geometry, createdAt point, token varchar, avatar text, updatedAt text, name real, group double, avatar timestamp, name blob, token varchar, createdAt blob, avatar enum, email bigint, name double, name bit, password binary);

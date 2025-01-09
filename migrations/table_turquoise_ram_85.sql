@@ -1,1 +1,0 @@
-CREATE TABLE table_turquoise_ram_85 (category datetime, updatedAt decimal, createdAt bigint);

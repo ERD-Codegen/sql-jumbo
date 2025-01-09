@@ -1,1 +1,0 @@
-CREATE TABLE table_fuchsia_dram_25 (token point, createdAt datetime, status time, comment double, category text, avatar tinyint, status blob, group boolean, group enum, avatar blob, name date, updatedAt enum, category mediumint, id bigint, id mediumint);

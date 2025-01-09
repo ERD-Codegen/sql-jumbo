@@ -1,1 +1,0 @@
-CREATE TABLE table_grey_ram_61 (phone bigint, email geometry, updatedAt bit, avatar timestamp, avatar bigint, createdAt bit, updatedAt datetime, avatar tinyint, email mediumint, id time, title timestamp);

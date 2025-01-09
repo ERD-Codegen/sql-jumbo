@@ -1,1 +1,0 @@
-CREATE TABLE table_ivory_png_47 (category serial, title timestamp, avatar double, password int, comment binary, comment binary, title set, avatar point, comment serial);

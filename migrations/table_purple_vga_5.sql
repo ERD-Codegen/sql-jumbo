@@ -1,1 +1,0 @@
-CREATE TABLE table_purple_vga_5 (id real, createdAt serial, password decimal, title mediumint, title enum, id varchar, phone enum, comment serial, avatar text, comment bigint, avatar time);

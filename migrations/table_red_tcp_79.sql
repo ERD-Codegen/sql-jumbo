@@ -1,1 +1,0 @@
-CREATE TABLE table_red_tcp_79 (updatedAt enum, title date, status tinyint, createdAt bigint, category time, avatar serial, group set, createdAt point, password text);

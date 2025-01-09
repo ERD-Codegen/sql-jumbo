@@ -1,1 +1,0 @@
-CREATE TABLE table_green_utf8_98 (category date, title int, email bit, email serial, email boolean, category text, phone datetime, updatedAt decimal, updatedAt blob, title geometry, category mediumint, email float, id blob, email time, password datetime, phone binary, status binary, group bigint);

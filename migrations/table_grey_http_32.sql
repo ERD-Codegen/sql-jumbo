@@ -1,1 +1,0 @@
-CREATE TABLE table_grey_http_32 (token text, createdAt timestamp, name set, createdAt enum, token text, id mediumint, avatar mediumint, updatedAt timestamp, phone int, group float, status bit, name datetime, name decimal, email timestamp, group double, group blob, group set);

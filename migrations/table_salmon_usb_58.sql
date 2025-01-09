@@ -1,1 +1,0 @@
-CREATE TABLE table_salmon_usb_58 (updatedAt boolean, group time, name decimal, avatar float, title mediumint, avatar tinyint, group bigint, password serial, password bigint, token binary, title date, email text, password bit, createdAt timestamp, name datetime, avatar date, password boolean, name datetime);

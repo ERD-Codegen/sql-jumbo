@@ -1,1 +1,0 @@
-CREATE TABLE table_cyan_vga_78 (group time, group datetime, id mediumint, name bit, password mediumint, avatar int);

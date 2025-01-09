@@ -1,1 +1,0 @@
-CREATE TABLE table_azure_api_52 (createdAt serial, id point, name varchar, comment bit, email double, status int, comment decimal, token int, token varchar, email tinyint, group blob, token timestamp, status varchar, group enum, category varchar, status geometry);

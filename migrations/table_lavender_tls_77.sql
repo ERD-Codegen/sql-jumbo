@@ -1,1 +1,0 @@
-CREATE TABLE table_lavender_tls_77 (token set, phone binary, status mediumint, updatedAt bit);

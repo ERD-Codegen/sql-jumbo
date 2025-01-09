@@ -1,1 +1,0 @@
-CREATE TABLE table_blue_ssl_70 (name tinyint, updatedAt tinyint, title decimal, email set, name serial);

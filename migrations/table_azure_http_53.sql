@@ -1,1 +1,0 @@
-CREATE TABLE table_azure_http_53 (createdAt datetime, status int, token date, name real, status float, id float, status double, avatar time, email date, phone geometry, category blob, updatedAt enum, phone varchar, comment decimal, password binary, name datetime, email smallint, title float, token text, token float, updatedAt blob, title double);

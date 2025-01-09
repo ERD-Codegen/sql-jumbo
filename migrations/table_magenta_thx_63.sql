@@ -1,1 +1,0 @@
-CREATE TABLE table_magenta_thx_63 (email double, email real, comment bit, email varchar, phone int, avatar datetime, name varchar, email set, title datetime);

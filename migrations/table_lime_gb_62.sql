@@ -1,1 +1,0 @@
-CREATE TABLE table_lime_gb_62 (phone tinyint, avatar date, updatedAt point, group smallint, token tinyint, createdAt bit, name mediumint, email binary, group varchar, category blob, group decimal, password binary, comment datetime, updatedAt int);

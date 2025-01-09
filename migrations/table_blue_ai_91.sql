@@ -1,1 +1,0 @@
-CREATE TABLE table_blue_ai_91 (avatar mediumint, title mediumint, email text, name time, email serial, comment real);

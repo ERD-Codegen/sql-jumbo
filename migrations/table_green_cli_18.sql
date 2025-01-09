@@ -1,1 +1,0 @@
-CREATE TABLE table_green_cli_18 (phone enum, status point, id date, updatedAt tinyint, comment smallint, email real, phone smallint, email date, avatar smallint, token int, status enum, category bit, comment float, status set, name text, comment double, password real, createdAt real);

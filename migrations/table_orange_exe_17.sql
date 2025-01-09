@@ -1,1 +1,0 @@
-CREATE TABLE table_orange_exe_17 (token serial, avatar smallint, title decimal, token datetime, category time, status decimal, comment text, category time, token varchar, group int, status timestamp, category tinyint, password bit, name decimal, avatar datetime, comment bigint, phone varchar, createdAt real, name bigint);

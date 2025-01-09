@@ -1,1 +1,0 @@
-CREATE TABLE table_lavender_ftp_35 (title bit, category geometry, createdAt smallint, updatedAt time, token mediumint, status varchar);

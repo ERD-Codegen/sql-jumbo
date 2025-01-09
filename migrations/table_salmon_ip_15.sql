@@ -1,1 +1,0 @@
-CREATE TABLE table_salmon_ip_15 (password double, id blob, comment smallint, title decimal, name blob, phone date, name bit, createdAt decimal, phone int, status serial, phone varchar, updatedAt timestamp, email float, comment geometry, token int, category int, updatedAt bit, comment set, email date, avatar float, category decimal, id geometry, id varchar);

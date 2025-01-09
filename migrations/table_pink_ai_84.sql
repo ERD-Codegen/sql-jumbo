@@ -1,1 +1,0 @@
-CREATE TABLE table_pink_ai_84 (token real, id decimal, status date, phone mediumint, group point, phone mediumint);

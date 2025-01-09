@@ -1,1 +1,0 @@
-CREATE TABLE table_salmon_usb_31 (phone point, phone datetime, token boolean, updatedAt point, token time, phone varchar, phone varchar, token varchar, phone date, password timestamp, email varchar, title datetime, category double, category int, name timestamp, group serial, status decimal, token double, updatedAt binary, id binary, comment bit);

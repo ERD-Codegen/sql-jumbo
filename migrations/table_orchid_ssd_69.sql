@@ -1,1 +1,0 @@
-CREATE TABLE table_orchid_ssd_69 (status binary, category text, token blob, id datetime, email blob, comment text, avatar geometry, password date, name int);

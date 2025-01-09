@@ -1,1 +1,0 @@
-CREATE TABLE table_mint_green_sql_55 (comment bigint, phone boolean, phone bigint, password int, name timestamp, createdAt tinyint, status varchar, id timestamp, id blob, phone decimal, category tinyint, comment boolean, category blob, phone smallint);
