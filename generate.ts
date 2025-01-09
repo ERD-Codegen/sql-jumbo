@@ -30,7 +30,7 @@ async function main() {
     );
 
     for (let k = 0; k < tablesPerFile; k++) {
-      const table = await generateTable(`${i}_${k}`);
+      const table = await generateTable();
       tables.push(table);
       content += table.statement + "\n\n";
     }
@@ -42,13 +42,10 @@ async function main() {
   }
 }
 
-async function generateTable(postfix: string) {
-  let tableName = [
-    "table",
-    faker.color.human(),
-    faker.hacker.abbreviation(),
-    postfix,
-  ].join("_");
+async function generateTable() {
+  let tableName = [faker.hacker.abbreviation(), faker.commerce.product()].join(
+    "_"
+  );
   tableName = toEntityName(tableName);
 
   const cols = Math.floor(Math.random() * 30) + 2;
@@ -68,7 +65,10 @@ async function generateTable(postfix: string) {
 }
 
 function toEntityName(name: string) {
-  return name.replace(/[^a-zA-Z0-9_]/g, "_").toLocaleLowerCase();
+  return name
+    .replace(/[^a-zA-Z0-9_]/g, "_")
+    .toLocaleLowerCase()
+    .replace(/_+/g, "_");
 }
 
 main().catch(console.error);
