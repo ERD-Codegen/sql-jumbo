@@ -7,7 +7,7 @@ import { faker } from "npm:@faker-js/faker";
 const __dirname = import.meta.dirname;
 const outputDir = path.join(__dirname, "migrations");
 const files = 10;
-const tablesPerFile = 100;
+const tablesPerFile = 600;
 
 async function main() {
   if (!fs.existsSync(outputDir)) {
