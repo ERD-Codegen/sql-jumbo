@@ -8,8 +8,8 @@ import { randomCol, randomTableName } from './gen.ts';
 
 const __dirname = import.meta.dirname;
 const outputDir = path.join(__dirname, "migrations");
-const files = 100;
-const tablesPerFile = 50;
+const files = 2;
+const tablesPerFile = 300;
 
 type GeneratedTable = Awaited<ReturnType<typeof generateTable>>;
 
