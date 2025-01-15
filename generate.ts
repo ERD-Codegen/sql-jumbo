@@ -4,6 +4,8 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { faker } from "npm:@faker-js/faker";
 
+import { randomCol, randomTableName } from './gen.ts';
+
 const __dirname = import.meta.dirname;
 const outputDir = path.join(__dirname, "migrations");
 const files = 100;
@@ -43,17 +45,29 @@ async function main() {
 }
 
 async function generateTable() {
-  let tableName = [faker.hacker.abbreviation(), faker.commerce.product()].join(
-    "_"
-  );
+  let tableName = randomTableName();
   tableName = toEntityName(tableName);
 
   const cols = Math.floor(Math.random() * 30) + 2;
-  const columns = Array.from({ length: cols }, () => {
-    const columnName = faker.database.column();
-    const dataType = faker.database.type();
-    return `${columnName} ${dataType}`;
-  });
+  const seen = new Set<string>('id');
+  const genUniqCol = () => {
+    while (true) {
+      const col = randomCol();
+      if (!seen.has(col)) {
+        seen.add(col);
+        return col;
+      }
+    }
+  }
+
+  const columns = [
+    'id serial primary key',
+    ...Array.from({ length: cols }, () => {
+      const columnName = genUniqCol();
+      const dataType = faker.database.type();
+      return `${columnName} ${dataType}`;
+    }),
+  ];
 
   return {
     name: tableName,
