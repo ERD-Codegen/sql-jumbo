@@ -361,6 +361,24 @@ export const cols = [
   "moveId",
 ];
 
+const dataTypes: [number, string][] = [
+  [10, "int"],
+  [10, "varchar"],
+  [10, "text"],
+  [10, "timestamp"],
+  [1, "date"],
+  [10, "bool"],
+  [2, "json"],
+  [2, "jsonb"],
+  [10, "float"],
+  [1, "decimal"],
+  [2, "uuid"],
+  [1, "inet"],
+  [1, "cidr"],
+  [1, "macaddr"],
+  [1, "bytea"],
+];
+
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
 export function any(arr: string[]) {
@@ -379,36 +397,128 @@ export function randomCol() {
   return any(cols);
 }
 
+export function randomDataType() {
+  return weightedOutcome(dataTypes);
+}
+
 export function randomTableName() {
-  const prefixes = ['tbl', 'vw', 'sys', 'app', 'core', 'tmp', 'stg', 'ref', 'dim', 'fact', 'log', 'agg', 'rel', 'tmp', 'ver', 'dst', 'src', 'cpy', 'olk', 'ext', 'pub', 'priv'];
-  const domains = ['user', 'order', 'payment', 'product', 'account', 'transaction', 'customer', 'inventory', 'audit', 'config', 'organization', 'company', 'record'];
-  const suffixes = ['data', 'info', 'log', 'hist', 'archive', 'meta', 'map', 'rel', 'type', 'status', 'seg', 'div', 'out', 'extra', 'notifications'];
-  const versions = ['v1', 'v2', 'legacy', 'new', 'temp', '2024', '2025'];
+  const prefixes = [
+    "tbl",
+    "vw",
+    "sys",
+    "app",
+    "core",
+    "tmp",
+    "stg",
+    "ref",
+    "dim",
+    "fact",
+    "log",
+    "agg",
+    "rel",
+    "tmp",
+    "ver",
+    "dst",
+    "src",
+    "cpy",
+    "olk",
+    "ext",
+    "pub",
+    "priv",
+  ];
+  const domains = [
+    "user",
+    "order",
+    "payment",
+    "product",
+    "account",
+    "transaction",
+    "customer",
+    "inventory",
+    "audit",
+    "config",
+    "organization",
+    "company",
+    "record",
+  ];
+  const suffixes = [
+    "data",
+    "info",
+    "log",
+    "hist",
+    "archive",
+    "meta",
+    "map",
+    "rel",
+    "type",
+    "status",
+    "seg",
+    "div",
+    "out",
+    "extra",
+    "notifications",
+  ];
+  const versions = ["v1", "v2", "legacy", "new", "temp", "2024", "2025"];
 
   const usePrefix = Math.random() > 0.5;
   const useSuffix = Math.random() > 0.7;
   const useVersion = Math.random() > 0.8;
 
-  let name = '';
+  let name = "";
 
   if (usePrefix) {
-    name += any(prefixes) + '_';
+    name += any(prefixes) + "_";
   }
 
   name += any(domains);
 
   if (useSuffix) {
-    name += '_' + any(suffixes);
+    name += "_" + any(suffixes);
   }
 
   if (useVersion) {
-    name += '_' + any(versions);
+    name += "_" + any(versions);
   }
 
   // Sometimes use camelCase instead of snake_case
   if (Math.random() > 0.7) {
-    name = name.split('_').map((part, i) => i > 0 ? capitalize(part) : part).join('');
+    name = name
+      .split("_")
+      .map((part, i) => (i > 0 ? capitalize(part) : part))
+      .join("");
   }
 
   return name;
+}
+
+/**
+ * Random integer between from and to,
+ * if "to" is undefined, from 0 to "from"
+ */
+export const random = (from, to) => {
+  if (!to) {
+    to = from;
+    from = 0;
+  }
+
+  return Math.round(from + (to - from) * Math.random());
+};
+
+export function between(value: number, from: number, to: number) {
+  return value >= from && value <= to;
+}
+
+export function weightedOutcome<Outcome>(outcomes: [number, Outcome][]) {
+  const weights = outcomes.map(([weight]) => weight);
+  const total = weights.reduce((a, b) => a + b, 0);
+  const target = random(0, total);
+
+  const ranges = weights.reduce((acc, weight, index) => {
+    const previousWeight = index === 0 ? 0 : acc[index - 1][0][1];
+    acc.push([[previousWeight, previousWeight + weight], outcomes[index][1]]);
+    return acc;
+  }, [] as [[number, number], Outcome][]);
+
+  const targetRange = ranges.find(([range]) => between(target, ...range));
+  return targetRange![1];
 }

@@ -4,7 +4,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { faker } from "npm:@faker-js/faker";
 
-import { randomCol, randomTableName } from './gen.ts';
+import { randomCol, randomDataType, randomTableName } from './gen.ts';
 
 const __dirname = import.meta.dirname;
 const outputDir = path.join(__dirname, "migrations");
@@ -64,7 +64,7 @@ async function generateTable() {
     'id serial primary key',
     ...Array.from({ length: cols }, () => {
       const columnName = genUniqCol();
-      const dataType = faker.database.type();
+      const dataType = randomDataType();
       return `${columnName} ${dataType}`;
     }),
   ];
